@@ -6,21 +6,18 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
+import Prueba from "@/components/ui/footer";
 import { Input } from "@/components/ui/input";
 import { Ghost } from "lucide-react";
 
 export default function home() {
   return (
     <>
-      {/* / importacion del componente boton  */}
-      <Button variant="prueba" size="lg">hey</Button>
-      {/* <Input placeholder="introduce your name "></Input>
-      <Card>
-        <CardHeader>
-          <CardTitle>dd</CardTitle>
-          <CardDescription>prueba de funcamiento </CardDescription>
-        </CardHeader>
-      </Card> */}
+      <Button variant="prueba" size="lg">
+        hey
+      </Button>
+      {/* prueba de componente simple*/}
+     <Prueba></Prueba>
     </>
   );
 }
