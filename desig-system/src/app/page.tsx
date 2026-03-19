@@ -9,12 +9,19 @@ import {
 } from "@/components/ui/card";
 // IMPORTACIONES
 import Footer from "@/components/ui/footer";
+import Hero from "@/components/ui/heroSection";
+import ServiceCard from "@/components/ui/servicecard";
+import Scard from "@/components/ui/servicecard";
 
 export default function Home() {
   return (
     <>
-      {/* boton toggle*/}
-      <BotonToggle></BotonToggle>
+      <Hero></Hero>
+      <div className=" flex flex-row gap-4 p-6 justify-center">
+        <ServiceCard title="hola" description="description"></ServiceCard>
+        <ServiceCard title="maks" description="description"></ServiceCard>
+        <ServiceCard title="nestor" description="description"></ServiceCard>
+      </div>
     </>
   );
 }

@@ -11,6 +11,7 @@ const linkVariants = cva("px-2 py-1 rounded", {
     },
   },
 });
+
 export function NavLink({
   href,
   children,

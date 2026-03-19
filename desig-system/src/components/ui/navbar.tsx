@@ -8,3 +8,4 @@ export function Navbar({ children }: { children: React.ReactNode }) {
     </nav>
   );
 }
+

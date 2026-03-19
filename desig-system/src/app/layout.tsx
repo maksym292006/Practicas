@@ -41,15 +41,15 @@ export default function RootLayout({
         contiene nav links dentro*/}
         <Navbar>
           <NavLink href="/" variant="hover">
-            Inicio
+            Home
           </NavLink>
 
           <NavLink href="/about" variant="hover">
-            Sobre nosotros
+            About us
           </NavLink>
 
           <NavLink href="/contact" variant="hover">
-            Contacto
+            Contact
           </NavLink>
         </Navbar>
         <main className="flex-1">{children}</main>
