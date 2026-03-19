@@ -7,18 +7,12 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import Prueba from "@/components/ui/footer";
-import { Input } from "@/components/ui/input";
-import { Ghost } from "lucide-react";
+// IMPORTACIONES
+import Footer from "@/components/ui/footer";
 
-export default function home() {
+export default function Home() {
   return (
     <>
-      <Button variant="prueba" size="lg">
-        hey
-      </Button>
-      {/* prueba de componente simple*/}
-      <Prueba></Prueba>
       {/* boton toggle*/}
       <BotonToggle></BotonToggle>
     </>

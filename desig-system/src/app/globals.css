@@ -1,8 +1,36 @@
+/* Importacion de tailwind css 
+----
+Nos permite el uso de etiquetas como ::after
+bg-dark-500
+text-white
+p-4
+*/
 @import "tailwindcss";
-
 
 @custom-variant dark (&:is(.dark *));
 
+/* Conexion de token creados por shadcn con tailwind
+
+1.
+:root{
+ Token(variable)-> --background oklch(1 0 0);
+}
+
+2. Uso de la variable
+--color-primary: var(--primary);
+--color-background: var(--background);
+
+Tailwind  tiene una regla , si  se declara
+--color-LO-QUE-SEA
+automaticamente podemos usar 
+bg-LO_QUE_SEA
+text-LO_QUE_SEA
+border-LO_QUE_SEA
+
+
+
+
+*/
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -46,6 +74,13 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/*  
+Declaracion de Tokens de diseño(variables)
+
+  --background: oklch(1 0 0);
+  --card: oklch(1 0 0);
+
+*/
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);

@@ -1,12 +1,13 @@
 // IMPORTACIONES
 import React from "react";
 
-function Prueba() {
+function Footer() {
   return (
-    //   uso de tailwind junto a la  creacion del boton
-    <button className="bg-blue-500">esto es una prueba</button>
+    <footer className="bg-black text-white py-4 text-center">
+      Somontano Desings ©2026 by Nestor & Maksym{" "}
+    </footer>
   );
 }
 
-// necesario para  poder usar en otras partes de la aplicacion
-export default Prueba;
+//etiqueta obligatoria, permite el uso universal
+export default Footer;
