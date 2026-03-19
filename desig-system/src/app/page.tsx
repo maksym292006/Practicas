@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import BotonToggle from "@/components/ui/button2";
 import {
   Card,
   CardHeader,
@@ -17,7 +18,9 @@ export default function home() {
         hey
       </Button>
       {/* prueba de componente simple*/}
-     <Prueba></Prueba>
+      <Prueba></Prueba>
+      {/* boton toggle*/}
+      <BotonToggle></BotonToggle>
     </>
   );
 }
