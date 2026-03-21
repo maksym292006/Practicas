@@ -11,7 +11,7 @@ interface ServiceCardProps {
 // 2. Recibimos los datos como parametros
 function ServiceCard({ icon, title, description }: ServiceCardProps) {
   return (
-    <div className="bg-white max-w-sm p-3 border rounded shadow-lg transition-transform duration-300 hover:scale-105">
+    <div className="bg-white max-w-xl p-3 border rounded-1 shadow-lg transition-transform duration-200 hover:scale-105 will-change-transform">
       {/* 3. Si hay icono, lo muestra. Si no, no muestra nada */}
       {icon && <div className="mb-3">{icon}</div>}
 

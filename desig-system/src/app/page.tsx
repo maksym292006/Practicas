@@ -1,6 +1,6 @@
 // IMPORTACIONES
 import { Button } from "@/components/ui/button";
-import BotonToggle from "@/components/ui/button2";
+import BotonToggle from "@/components/ui/buttonToggle";
 import Image from "next/image";
 import {
   Card,
@@ -15,24 +15,27 @@ import Footer from "@/components/ui/footer";
 import Hero from "@/components/ui/heroSection";
 import ServiceCard from "@/components/ui/servicecard";
 import Scard from "@/components/ui/servicecard";
-import { Notebook, Paintbrush, Pen, Server } from "lucide-react";
+import { Notebook, Paintbrush, Pen, Rocket, Server } from "lucide-react";
 import Link from "next/link";
 import { server } from "shadcn/mcp";
+import BotonOurs from "@/components/ui/buttonLink";
+import Tag from "@/components/tags";
+import BotonLink from "@/components/ui/buttonLink";
 
 export default function Home() {
   return (
     <>
       {/* Hero section  */}
+
       <Hero></Hero>
       {/* Service Cards */}
-      <div className=" flex flex-row gap-4 p-6 justify-center">
+      <div className=" flex flex-col mx-auto max-w-5xl rounded-sm gap-5 p-10 mt-10 items-center">
         {/* 1 */}
         <ServiceCard
-          icon={<Paintbrush />}
-          title="UI & Design Systems"
-          description="We build scalable design systems
-           that keep your product consistent and your team moving fast."
-        ></ServiceCard>
+          icon={<Rocket />}
+          title="Product Launch"
+          description="We take your product from zero to live, handling design, development and deployment end to end."
+        />
         {/* 2 */}
         <ServiceCard
           icon={<Server />}
@@ -48,16 +51,16 @@ export default function Home() {
           your product grows without technical debt."
         ></ServiceCard>
       </div>
-      {/* CARD  ejemplo de uso */}
 
-      <div className="max-w-2xl mx-auto p-6">
+      {/* CARD */}
+      <div className="max-w-4xl mx-auto p-6 ">
         <Card>
           <Image
-            src="/images/img.webp"
+            src="/images/img2.png"
             alt="texto alternativo"
-            width={800}
-            height={300}
-            className="w-full object-cover"
+            width={700}
+            height={550}
+            className="object-cover mx-auto mt-10 rounded-4xl mt-15"
           />
           <CardHeader className="gap-4">
             <Pen size={36} />
@@ -88,38 +91,61 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
             {/* Tags */}
             <div className="flex gap-2 flex-wrap">
-              <span className="border rounded-full px-3 py-1 text-xs">
-                React
-              </span>
-              <span className="border rounded-full px-3 py-1 text-xs">
-                Tailwind
-              </span>
-              <span className="border rounded-full px-3 py-1 text-xs">
-                Next.js
-              </span>
+              <Tag context="React"></Tag>
+              <Tag context="Tailwind"></Tag>
+              <Tag context="Next.js"></Tag>
             </div>
           </CardContent>
-
-          <CardFooter className="flex gap-3 mt-2">
-            <Link
-              href="/contact"
-              className="inline-block bg-black text-white rounded-full px-6 py-2
-            hover:bg-neutral-800 transition-all duration-300"
-            >
-              Get in touch {"->"}
-            </Link>
-            <Link
-              href="/about"
-              className="inline-block border border-black rounded-full px-6 py-2
-            hover:bg-black hover:text-white transition-all duration-300"
-            >
-              Learn more
-            </Link>
+          {/* Footer*/}
+          <CardFooter className="flex gap-3 mt-2 ">
+            <BotonLink link="/contact" context="Get in touch ->"></BotonLink>
+            <BotonLink
+              link="/about"
+              context="Learn more"
+              variant="overlined"
+            ></BotonLink>
           </CardFooter>
         </Card>
+      </div>
+      {/* HOW IT WORKS */}
+      <div className="py-20 px-6">
+        {/* Título de la sección */}
+        <h2 className="text-5xl font-bold text-center mb-12">How it works</h2>
+
+        {/* Contenedor de los tres pacsos */}
+        <div className="flex flex-col gap-8 justify-center max-w-4xl mx-auto items-center">
+          {/* Paso 1 */}
+          <div className="flex flex-col items-center text-center max-w-xs">
+            <span className="text-4xl font-bold mb-4">01</span>
+            <h3 className="text-lg font-semibold mb-2">Discovery call</h3>
+            <p className="text-sm text-gray-500">
+              We start with a 30 minute call to understand your project, goals
+              and timeline.
+            </p>
+          </div>
+
+          {/* Paso 2 */}
+          <div className="flex flex-col items-center text-center max-w-xs">
+            <span className="text-4xl font-bold mb-4">02</span>
+            <h3 className="text-lg font-semibold mb-2">Design & build</h3>
+            <p className="text-sm text-gray-500">
+              We design and develop your product iterating with you every step
+              of the way.
+            </p>
+          </div>
+
+          {/* Paso 3 */}
+          <div className="flex flex-col items-center text-center max-w-xs">
+            <span className="text-4xl font-bold mb-4">03</span>
+            <h3 className="text-lg font-semibold mb-2">Launch & grow</h3>
+            <p className="text-sm text-gray-500">
+              We deploy your product and stay with you to make sure everything
+              runs smoothly.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
