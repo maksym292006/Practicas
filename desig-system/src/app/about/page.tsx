@@ -2,16 +2,17 @@
 import React from "react";
 import { Rocket, Pen, Server } from "lucide-react";
 import BotonLink from "@/components/ui/buttonLink";
+import Tag from "@/components/tags";
 
 export default function AboutPage() {
   return (
     //  Contenedor principal
     <section className="flex flex-col h-full py-20 px-6 max-w-4xl mx-auto">
       {/* Cabecera,tipo boton  */}
-      <p className="border rounded-full px-4 py-1 w-fit mb-4 text-sm">
-        About us
-      </p>
-
+      <div className="mb-10 mx-auto">
+        <Tag context="ABOUT US"></Tag>
+      </div>
+    
       <h1 className="text-3xl font-bold mb-4">We are GoatyDesigners</h1>
       <p className="text-sm text-gray-500 leading-relaxed mb-16 max-w-xl">
         A small studio based in Somontano focused on building clean, scalable
