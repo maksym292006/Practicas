@@ -21,6 +21,7 @@ import { server } from "shadcn/mcp";
 import BotonOurs from "@/components/ui/buttonLink";
 import Tag from "@/components/tags";
 import BotonLink from "@/components/ui/buttonLink";
+import TCard from "@/components/transparentCard";
 
 export default function Home() {
   return (
@@ -115,36 +116,28 @@ export default function Home() {
         <h2 className="text-5xl font-bold text-center mb-12">How it works</h2>
 
         {/* Contenedor de los tres pacsos */}
-        <div className="flex flex-col gap-8 justify-center max-w-4xl mx-auto items-center">
+        <div className="flex flex-col gap-8  max-w-4xl mx-auto auto items-center">
           {/* Paso 1 */}
-          <div className="flex flex-col items-center text-center max-w-xs">
-            <span className="text-4xl font-bold mb-4">01</span>
-            <h3 className="text-lg font-semibold mb-2">Discovery call</h3>
-            <p className="text-sm text-gray-500">
-              We start with a 30 minute call to understand your project, goals
-              and timeline.
-            </p>
-          </div>
-
+          <TCard
+            nStep="01"
+            title="Discovery call"
+            context=" We start with a 30 minute call to understand your project, goals
+              and timeline."
+          ></TCard>
           {/* Paso 2 */}
-          <div className="flex flex-col items-center text-center max-w-xs">
-            <span className="text-4xl font-bold mb-4">02</span>
-            <h3 className="text-lg font-semibold mb-2">Design & build</h3>
-            <p className="text-sm text-gray-500">
-              We design and develop your product iterating with you every step
-              of the way.
-            </p>
-          </div>
-
+          <TCard
+            nStep="02"
+            title="Design & build"
+            context="We design and develop your product iterating with you every step
+              of the way."
+          ></TCard>
           {/* Paso 3 */}
-          <div className="flex flex-col items-center text-center max-w-xs">
-            <span className="text-4xl font-bold mb-4">03</span>
-            <h3 className="text-lg font-semibold mb-2">Launch & grow</h3>
-            <p className="text-sm text-gray-500">
-              We deploy your product and stay with you to make sure everything
-              runs smoothly.
-            </p>
-          </div>
+          <TCard
+            nStep="03"
+            title="Launch & grow"
+            context=" We deploy your product and stay with you to make sure everything
+              runs smoothly."
+          ></TCard>
         </div>
       </div>
     </>
