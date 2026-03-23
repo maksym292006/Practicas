@@ -140,6 +140,9 @@ export default function Home() {
           ></TCard>
         </div>
       </div>
+
+      {/* uso del token con la dandole color a un div */}
+      <div className="bg-primary p-10">uso de tokens</div>
     </>
   );
 }
