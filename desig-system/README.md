@@ -1,54 +1,57 @@
-Practicas - Next.js Project
-Este repositorio contiene un proyecto desarrollado con Next.js, configurado para el desarrollo de prácticas de programación y desarrollo web.
+# Practicas - Next.js Project
+> **README: Configuración para desarrollo de prácticas de programación y desarrollo web.**
 
-🚀 Tecnologías Principales
-Framework: Next.js (App Router)
+Este repositorio contiene un proyecto desarrollado con **Next.js**, optimizado para la implementación de arquitecturas modernas y escalables.
 
-Lenguaje: TypeScript
+---
 
-Estilos: PostCSS / CSS
+## Estructura del Proyecto
 
-Linting: ESLint
+| Directorio / Archivo | Función |
+| :--- | :--- |
+| `/src/app` | Rutas y componentes bajo arquitectura App Router. |
+| `/public` | Gestión de recursos estáticos y assets. |
+| `next.config.ts` | Parámetros de configuración del framework. |
+| `tsconfig.json` | Definiciones y reglas de TypeScript. |
 
-🛠️ Requisitos Previos
-Asegúrate de tener instalado:
+---
 
-Node.js (versión recomendada LTS)
+## Tecnologías Principales
 
-Un gestor de paquetes (npm, yarn, pnpm o bun)
+| Stack | Implementación |
+| :--- | :--- |
+| **Framework** | Next.js (App Router) |
+| **Lenguaje** | TypeScript |
+| **Estilos** | PostCSS / CSS |
+| **Linting** | ESLint |
 
-🏃 Instalación y Ejecución
-Clonar el repositorio:
+---
 
-Bash
+## Especificaciones de Ejecución
+
+```bash
+# Clonar repositorio
 git clone https://github.com/maksym292006/Practicas.git
 cd Practicas
-Instalar dependencias:
 
-Bash
+# Instalar dependencias
 npm install
-# o
-yarn install
-Iniciar el servidor de desarrollo:
 
-Bash
+# Iniciar servidor de desarrollo
 npm run dev
-# o
-yarn dev
-Acceder a la aplicación:
-Abre http://localhost:3000 en tu navegador para ver el resultado.
+```
 
-📁 Estructura del Proyecto
-/src/app: Contiene las rutas y componentes principales de la aplicación siguiendo la arquitectura de Next.js App Router.
+---
 
-/public: Archivos estáticos como imágenes y assets.
+## Notas de Desarrollo
 
-next.config.ts: Configuración específica de Next.js.
+* **Acceso Local:** El entorno se despliega por defecto en `http://localhost:3000`.
+* **HMR:** La edición del archivo `src/app/page.tsx` activa el Hot Module Replacement de forma automática.
+* **Despliegue:** Configurado para integración nativa con la plataforma Vercel.
 
-tsconfig.json: Configuración de TypeScript.
+---
 
-📝 Desarrollo
-Para comenzar a editar la aplicación, modifica el archivo src/app/page.tsx. La página se actualizará automáticamente gracias al Hot Module Replacement (HMR).
+## Requisitos de Entorno
 
-🌐 Despliegue
-La forma más sencilla de desplegar este proyecto es utilizando la plataforma Vercel, optimizada específicamente para aplicaciones Next.js.
+* **Runtime:** Node.js (Versión LTS recomendada).
+* **Gestores compatibles:** npm, yarn, pnpm o bun.
