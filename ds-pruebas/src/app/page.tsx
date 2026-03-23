@@ -1,6 +1,12 @@
 // CURSOR
 // import React from 'react';
 
+import { Button } from "@/components/design-system/Button";
+import { Footer } from "@/components/design-system/Footer";
+import { Hero } from "@/components/design-system/Hero";
+import { Navbar } from "@/components/design-system/navbar";
+import { ServiceCard } from "@/components/design-system/serviceCard";
+
 // const LandingPage = () => {
 //   return (
 //     <div className="min-h-screen bg-white text-slate-900 font-sans">
@@ -176,13 +182,7 @@
 //     </div>
 //   );
 // }
-import { 
-  Navbar, 
-  Footer, 
-  Hero, 
-  Button, 
-  ServiceCard 
-} from "@/components/design-system";
+
 
 export default function PanaderiaSomontano() {
   return (
