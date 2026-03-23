@@ -1,13 +1,15 @@
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import { CartProvider } from '@/lib/cart-context'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Sweet Dreams Bakery',
+  description: 'Fresh-baked goods made with love and premium ingredients',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -36,7 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-sans antialiased">
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
+        <Analytics />
       </body>
     </html>
   )
