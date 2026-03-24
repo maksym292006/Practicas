@@ -82,7 +82,7 @@ Declaracion de Tokens de diseño(variables)
 
 */
 :root {
-  --background: oklch(1 0 0);
+  --background: oklch(96.416% 0.00011 271.152);
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);

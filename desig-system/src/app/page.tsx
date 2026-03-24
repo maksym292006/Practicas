@@ -141,8 +141,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* uso del token dandole color a un div */}
-      <div className="bg-primary p-10">uso de tokens</div>
+    
     </>
   );
 }

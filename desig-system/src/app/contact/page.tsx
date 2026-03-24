@@ -1,13 +1,14 @@
+import Tag from "@/components/tags";
 import BotonToggle from "@/components/ui/buttonToggle";
 import React from "react";
 
 export default function ContactPage() {
   return (
-    <section className="flex flex-col items-center justify-center h-full py-20 px-6">
+    <section className="flex flex-col items-center py-20 h-screen px-6">
       {/* Cabecera */}
-      <p className="border rounded-full px-4 py-1 w-fit mx-auto mb-4 text-sm">
-        Contact us
-      </p>
+      <div className="mb-10 mx-auto">
+        <Tag context="CONTACT US"></Tag>
+      </div>
       <h1 className="text-3xl font-bold text-center mb-2">
         Let's work together
       </h1>
