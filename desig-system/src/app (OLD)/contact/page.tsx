@@ -24,7 +24,7 @@ export default function ContactPage() {
             <label className="text-sm font-semibold">Name</label>
             <input
               type="text"
-              placeholder="makako"
+              placeholder="Jhon"
               className="border rounded-lg px-4 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-black"
             />
           </div>
@@ -34,7 +34,7 @@ export default function ContactPage() {
             <label className="text-sm font-semibold">Last name</label>
             <input
               type="text"
-              placeholder="orangutani"
+              placeholder="Smith"
               className="border rounded-lg px-4 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-black"
             />
           </div>
@@ -45,7 +45,7 @@ export default function ContactPage() {
           <label className="text-sm font-semibold">Email</label>
           <input
             type="email"
-            placeholder="makako@example.com"
+            placeholder="jhonSmith@example.com"
             className="border rounded-lg px-4 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-black"
           />
         </div>

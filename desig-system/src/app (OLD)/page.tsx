@@ -57,11 +57,11 @@ export default function Home() {
       <div className="max-w-4xl mx-auto p-6 ">
         <Card>
           <Image
-            src="/images/img2.png"
+            src="/images/img3.png"
             alt="texto alternativo"
             width={700}
             height={550}
-            className="object-cover mx-auto mt-10 rounded-4xl mt-15"
+            className="object-cover mx-auto mt-10 rounded-4xl mt-15 grayscale contrast-125"
           />
           <CardHeader className="gap-4">
             <Pen size={36} />
@@ -140,6 +140,9 @@ export default function Home() {
           ></TCard>
         </div>
       </div>
+
+      {/* uso del token dandole color a un div */}
+      <div className="bg-primary p-10">uso de tokens</div>
     </>
   );
 }
